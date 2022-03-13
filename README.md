@@ -1,4 +1,4 @@
-Prod build in docker:
+# Prod build in docker
 docker build -t app .
 
 Run in docker:
@@ -9,13 +9,12 @@ App is served from localhost:9000
 Changes "in app" will be handled saved to server after two seconds (debounce).
 
 
----Not currently working---
+# Not currently working
 Debug build in docker:
 docker build -f Dockerfile.debug -t appdebug .
 
 Run in docker mounted (linux):
-docker run -it -p 9000:3000 -v $(pwd):/app/Server/src -v $(pwd):/app/WebApp/src appdebug
+docker run -it -p 9000:3000 -v \$(pwd):/app/Server/src -v $(pwd):/app/WebApp/src appdebug
 
 Run in docker mounted (PowerShell):
-docker run -it -p 9000:3000 -v ${PWD}:/app/Server/src -v ${PWD}:/app/WebApp/src appdebug
----
+docker run -it -p 9000:3000 -v \${PWD}:/app/Server/src -v ${PWD}:/app/WebApp/src appdebug
