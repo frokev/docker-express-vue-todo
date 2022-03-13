@@ -155,7 +155,6 @@ coverage/
 .parcel-cache/
 dist/
 lib/
-.vscode/
 .idea/
 *.min.js
 # Logs
