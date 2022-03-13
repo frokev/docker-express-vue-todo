@@ -6,6 +6,7 @@ docker run -it -p 9000:3000 app
 
 App is served from localhost:9000
 
+Changes "in app" will be handled saved to server after two seconds (debounce).
 
 
 ---Not currently working---
